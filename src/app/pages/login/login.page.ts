@@ -34,5 +34,14 @@ export class LoginPage implements OnInit {
   navigateToRegister() {
     this.navCtrl.navigateForward('/registro');
   }
-  
+
+  // Método que redirige a la página de recuperar contraseña
+  navigateToRecuperar() {
+    this.navCtrl.navigateForward('/recuperar');
+  }
+
+  // Método que redirige a la página de reserva
+  navigateToReserva() {
+    this.navCtrl.navigateForward('/reserva');
+  }
 }

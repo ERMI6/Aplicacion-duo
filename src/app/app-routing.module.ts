@@ -30,13 +30,13 @@ const routes: Routes = [
     loadChildren: () => import('./pages/error404/error404.module').then(m => m.Error404PageModule)
   },
   {
+    path: 'reserva',  // Cambié "recerba" a "reserva"
+    loadChildren: () => import('./pages/reserva/reserva.module').then(m => m.ReservaPageModule)  // Cambié "RecerbaPageModule" a "ReservaPageModule"
+  },
+  {
     path: '**',
     redirectTo: 'error404',
     pathMatch: 'full'
-  },
-  {
-    path: 'recerba',
-    loadChildren: () => import('./recerba/recerba.module').then( m => m.RecerbaPageModule)
   }
 ];
 
