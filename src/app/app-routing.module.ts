@@ -37,6 +37,18 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'error404',
     pathMatch: 'full'
+  },
+  {
+    path: 'clinica-buin',
+    loadChildren: () => import('./clinica-buin/clinica-buin.module').then( m => m.ClinicaBuinPageModule)
+  },
+  {
+    path: 'hospital-de-paine',
+    loadChildren: () => import('./hospital-de-paine/hospital-de-paine.module').then( m => m.HospitalDePainePageModule)
+  },
+  {
+    path: 'hospital-de-santiago',
+    loadChildren: () => import('./hospital-de-santiago/hospital-de-santiago.module').then( m => m.HospitalDeSantiagoPageModule)
   }
 ];
 
